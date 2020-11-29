@@ -1,0 +1,36 @@
+name: CI
+
+# Controls when the action will run. 
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+       affdir="../affiliation"
+       afftmp="affilDOMjudge"
+       sudo apt update; sudo apt install cutycapt xvfb httpie -y
+       cd domjudge
+       mkdir $afftmp
+       for file in `ls $affdir`
+       do
+         echo $file
+         cp $affdir/$file/64.png $afftmp/$file.png
+       done
+       ls $afftmp
+       docker-compose up -d mariadb
+       sleep 30s
+       docker-compose up -d domjudge
+       sleep 1m
+       ADMINPASS=$(docker exec -i domjudge_domjudge_1 cat /opt/domjudge/domserver/etc/initial_admin_password.secret)
+       http -a admin:$ADMINPASS --check-status -b -f POST "http://localhost:12345/api/users/organizations" json@organizations.json
+       http -a admin:$ADMINPASS --check-status -b -f POST "http://localhost:12345/api/users/teams" json@teams.json
+       http -a admin:$ADMINPASS --check-status -b PUT "http://localhost:12345/api/config" show_affiliation_logos=true data_source=1 --ignore-stdin
+       #http -a admin:$ADMINPASS --verbose --check-status -b GET "http://localhost:12345/api/config"
+       xvfb-run --server-args="-screen 0, 1024x768x24" cutycapt --url=http://localhost:12345 --out=scoreboard.png
+    - uses: actions/upload-artifact@v2
+      with:
+        name: DJ_scoreboard
+        path: domjudge/scoreboard.png

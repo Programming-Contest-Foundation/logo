@@ -1,0 +1,16 @@
+[
+{"organization_id": "U-3088", "name": "Avans", "id": "1", "group_ids": ["3"]},
+{"organization_id": "U-0635", "name": "TU Delft", "id": "2", "group_ids": ["3"]},
+{"organization_id": "U-0711", "name": "TU/e", "id": "3", "group_ids": ["3"]},
+{"organization_id": "U-3179", "name": "KUL", "id": "4","group_ids": ["3"]},
+{"organization_id": "U-1172", "name": "Leiden", "id": "5", "group_ids": ["3"]},
+{"organization_id": "U-7250", "name": "Radboud", "id": "6", "group_ids": ["3"]},
+{"organization_id": "U-2096", "name": "UU", "id": "7", "group_ids": ["3"]},
+{"organization_id": "U-2097", "name": "UvA", "id": "8", "group_ids": ["3"]},
+{"organization_id": "U-2307", "name": "UT", "id": "9", "group_ids": ["3"]},
+{"organization_id": "U-3199", "name": "UCL", "id": "10", "group_ids": ["3"]},
+{"organization_id": "U-7560", "name": "Mons", "id": "11", "group_ids": ["3"]},
+{"organization_id": "U-7642", "name": "Bruxelles", "id": "12", "group_ids": ["3"]},
+{"organization_id": "U-2347", "name": "Utrecht University", "id": "13", "group_ids": ["3"]},
+{"organization_id": "U-2381", "name": "VU", "id": "14", "group_ids": ["3"]}
+]
