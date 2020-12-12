@@ -9,7 +9,7 @@ When hosting a BAPC regional one can need:
 |---|---|---|
 | U-3088 | Avans Hogeschool 's-Hertogenbosch| :x: |
 | U-0635 | TU Delft | :heavy_check_mark: |
-| U-0711 | TU/e | :question: |
+| U-0711 | TU/e | :heavy_check_mark: |
 | U-3179 | Katholieke Universiteit Leuven | :x: |
 | U-1172 | Leiden University | :question: |
 | U-7250 | Radboud University | :x: |
