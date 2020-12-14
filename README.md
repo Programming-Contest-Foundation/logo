@@ -31,5 +31,6 @@ legend
 | :heavy_check_mark: | Verified
 
 Thanks to:
-- @verwoerd
-- @0xJoey
+- [verwoerd](https://github.com/verwoerd)
+- [Joey Haas](https://github.com/0xJoey)
+- [Nicky Gerritsen](https://github.com/nickygerritsen)
