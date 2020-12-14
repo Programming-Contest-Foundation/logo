@@ -29,3 +29,7 @@ legend
 | :x: | Missing |
 | :question: | Present, but needs verification |
 | :heavy_check_mark: | Verified
+
+Thanks to:
+- @verwoerd
+- @0xJoey
