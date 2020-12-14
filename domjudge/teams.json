@@ -5,7 +5,6 @@
 {"organization_id": "U-3179", "name": "KUL", "id": "4","group_ids": ["3"]},
 {"organization_id": "U-1172", "name": "Leiden", "id": "5", "group_ids": ["3"]},
 {"organization_id": "U-7250", "name": "Radboud", "id": "6", "group_ids": ["3"]},
-{"organization_id": "U-2096", "name": "UU", "id": "7", "group_ids": ["3"]},
 {"organization_id": "U-2097", "name": "UvA", "id": "8", "group_ids": ["3"]},
 {"organization_id": "U-2307", "name": "UT", "id": "9", "group_ids": ["3"]},
 {"organization_id": "U-3199", "name": "UCL", "id": "10", "group_ids": ["3"]},
