@@ -16,10 +16,8 @@ jobs:
        mkdir $afftmp
        for file in `ls $affdir`
        do
-         echo $file
          cp $affdir/$file/64.png $afftmp/$file.png
        done
-       ls $afftmp
        docker-compose up -d mariadb
        sleep 30s
        docker-compose up -d domjudge
