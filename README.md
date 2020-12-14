@@ -12,7 +12,7 @@ When hosting a BAPC regional one can need:
 | U-0711 | TU/e | :heavy_check_mark: |
 | U-3179 | Katholieke Universiteit Leuven | :x: |
 | U-1172 | Leiden University | :question: |
-| U-7250 | Radboud University | :x: |
+| U-7250 | Radboud University | :heavy_check_mark: |
 | ~~U-2096~~ | ~~Universiteit Utrecht~~ | :x:  |
 | U-2097 | Universiteit van Amsterdam | :heavy_check_mark: |
 | U-2307 | University of Twente | :heavy_check_mark: |
