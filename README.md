@@ -7,6 +7,7 @@ When hosting a BAPC regional one can need:
 
 | ICPC ID | Name | Status |
 |---|---|---|
+| U-3546 | Ghent University | :heavy_check_mark: |
 | U-3088 | Avans Hogeschool 's-Hertogenbosch| :x: |
 | U-0635 | TU Delft | :heavy_check_mark: |
 | U-0711 | TU/e | :heavy_check_mark: |
