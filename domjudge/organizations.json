@@ -11,5 +11,6 @@
 {"id": "U-7560", "name": "Université", "formal_name": " Université de Mons ", "country": "NLD"},
 {"id": "U-7642", "name": "Université", "formal_name": " Université Libre de Bruxelles ", "country": "NLD"},
 {"id": "U-2347", "name": "Utrecht", "formal_name": " Utrecht University ", "country": "NLD"},
-{"id": "U-2381", "name": "Vrije", "formal_name": " Vrije Universiteit Amsterdam ", "country": "NLD"}
+{"id": "U-2381", "name": "Vrije", "formal_name": " Vrije Universiteit Amsterdam ", "country": "NLD"},
+{"id": "U-10500", "name": "UM", "formal_name": "Universit\u00e4t Maastricht ", "country": "NLD"}
 ]
