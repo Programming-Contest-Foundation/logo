@@ -28,7 +28,7 @@ jobs:
        http -a admin:$ADMINPASS --check-status -b PUT "http://localhost:12345/api/config" show_affiliation_logos=true data_source=1 --ignore-stdin
        #http -a admin:$ADMINPASS --verbose --check-status -b GET "http://localhost:12345/api/config"
        xvfb-run --server-args="-screen 0, 1024x768x24" cutycapt --url=http://localhost:12345 --out=scoreboard.png
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: DJ_scoreboard
         path: domjudge/scoreboard.png
