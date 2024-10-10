@@ -11,5 +11,6 @@
 {"organization_id": "U-7560", "name": "Mons", "id": "11", "group_ids": ["3"]},
 {"organization_id": "U-7642", "name": "Bruxelles", "id": "12", "group_ids": ["3"]},
 {"organization_id": "U-2347", "name": "Utrecht University", "id": "13", "group_ids": ["3"]},
-{"organization_id": "U-2381", "name": "VU", "id": "14", "group_ids": ["3"]}
+{"organization_id": "U-2381", "name": "VU", "id": "14", "group_ids": ["3"]},
+{"organization_id": "U-10500", "name": "UM", "id": "15", "group_ids": ["3"]}
 ]

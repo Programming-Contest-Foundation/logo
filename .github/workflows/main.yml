@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - run: |
        affdir="../affiliation"
        afftmp="affilDOMjudge"
@@ -18,17 +18,17 @@ jobs:
        do
          cp $affdir/$file/64.png $afftmp/$file.png
        done
-       docker-compose up -d mariadb
+       docker compose up -d mariadb
        sleep 30s
-       docker-compose up -d domjudge
+       docker compose up -d domjudge
        sleep 1m
-       ADMINPASS=$(docker exec -i domjudge_domjudge_1 cat /opt/domjudge/domserver/etc/initial_admin_password.secret)
+       ADMINPASS=$(docker exec -i domjudge-domjudge-1 cat /opt/domjudge/domserver/etc/initial_admin_password.secret)
        http -a admin:$ADMINPASS --check-status -b -f POST "http://localhost:12345/api/users/organizations" json@organizations.json
        http -a admin:$ADMINPASS --check-status -b -f POST "http://localhost:12345/api/users/teams" json@teams.json
        http -a admin:$ADMINPASS --check-status -b PUT "http://localhost:12345/api/config" show_affiliation_logos=true data_source=1 --ignore-stdin
        #http -a admin:$ADMINPASS --verbose --check-status -b GET "http://localhost:12345/api/config"
        xvfb-run --server-args="-screen 0, 1024x768x24" cutycapt --url=http://localhost:12345 --out=scoreboard.png
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: DJ_scoreboard
         path: domjudge/scoreboard.png

@@ -22,6 +22,7 @@ When hosting a BAPC regional one can need:
 | U-7642 | Université Libre de Bruxelles | :heavy_check_mark: |
 | U-2347 | Utrecht University | :heavy_check_mark: |
 | U-2381 | Vrije Universiteit Amsterdam | :heavy_check_mark: |
+| U-10500 | Maastricht University | :heavy_check_mark: |
 
 legend
 
