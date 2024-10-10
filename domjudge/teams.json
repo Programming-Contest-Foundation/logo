@@ -15,5 +15,6 @@
 {"organization_id": "U-10500", "name": "UM", "id": "15", "group_ids": ["3"]},
 {"organization_id": "U-7019", "name": "HS Leiden", "id": "16", "group_ids": ["3"]},
 {"organization_id": "U-23553", "name": "Luxembourg", "id": "17", "group_ids": ["3"]},
-{"organization_id": "U-1529", "name": "RU Groningen", "id": "18", "group_ids": ["3"]}
+{"organization_id": "U-1529", "name": "RU Groningen", "id": "18", "group_ids": ["3"]},
+{"organization_id": "U-3546", "name": "Ghent", "id": "19", "group_ids": ["3"]}
 ]
