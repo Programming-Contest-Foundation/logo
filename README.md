@@ -17,7 +17,7 @@ When hosting a BAPC regional one can need:
 | ~~U-2096~~ | ~~Universiteit Utrecht~~ | :x:                |
 | U-2097 | Universiteit van Amsterdam | :heavy_check_mark: |
 | U-2307 | University of Twente | :heavy_check_mark: |
-| U-3199 | Université catholique de Louvain | :x:                |
+| U-3199 | Université catholique de Louvain | :heavy_check_mark:                |
 | U-7560 | Université de Mons | :heavy_check_mark: |
 | U-7642 | Université Libre de Bruxelles | :heavy_check_mark: |
 | U-2347 | Utrecht University | :heavy_check_mark: |
