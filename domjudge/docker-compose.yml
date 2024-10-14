@@ -28,7 +28,7 @@ services:
     ports:
       - 12345:80
     volumes:
-      - ${PWD}/affilDOMjudge:/opt/domjudge/domserver/webapp/public/images/affiliations
+      - ${PWD}/../affiliation:/opt/domjudge/domserver/webapp/public/images/affiliations
   #  entrypoint: ["/bin/bash","-c","sleep 1m && /scripts/start.sh"]
   #  hostname: domserver
   #  #privileged: true
