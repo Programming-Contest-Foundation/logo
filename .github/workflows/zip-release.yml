@@ -1,0 +1,28 @@
+name: Zip-Release
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Zip logos for domjudge
+        run: cd ${{ github.workspace }}; mkdir out;cd organizations; for f in *; do cp "$f/logo.64.png" "../out/$f.64.png"; done; cd ../out; zip -r domjudge.zip *.png;
+      - name: Zip logos for cds
+        run: cd ${{ github.workspace }}; zip  -r out/cds.zip organizations
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: Easy import zips
+          files: |
+            ${{ github.workspace }}/out/domjudge.zip
+            ${{ github.workspace }}/out/cds.zip
+            ${{ github.workspace }}/domjudge/organizations.json

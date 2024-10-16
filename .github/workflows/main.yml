@@ -9,14 +9,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: |
-       affdir="../affiliation"
+       affdir="../organizations"
        afftmp="affilDOMjudge"
        sudo apt update; sudo apt install cutycapt xvfb httpie -y
        cd domjudge
        mkdir $afftmp
        for file in `ls $affdir`
        do
-         cp $affdir/$file/64.png $afftmp/$file.png
+         cp $affdir/$file/logo.64.png $afftmp/$file.png
        done
        docker compose up -d mariadb
        sleep 30s
