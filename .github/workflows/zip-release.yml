@@ -15,7 +15,7 @@ jobs:
       - name: Zip logos for domjudge
         run: cd ${{ github.workspace }}; mkdir out;cd organizations; for f in *; do cp "$f/logo.64x64.png" "../out/$f.64.png"; done; cd ../out; zip -r domjudge.zip *.png;
       - name: Zip logos for cds
-        run: cd ${{ github.workspace }}; zip  -r out/cpf.zip organizations; zip -rj out/cpf.zip domjudge/organizations.json
+        run: cd ${{ github.workspace }}; zip  -r out/contest-package.zip organizations; zip -rj out/contest-package.zip domjudge/organizations.json
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -24,4 +24,4 @@ jobs:
           title: Easy import zips
           files: |
             ${{ github.workspace }}/out/domjudge.zip
-            ${{ github.workspace }}/out/cpf.zip
+            ${{ github.workspace }}/out/contest-package.zip
