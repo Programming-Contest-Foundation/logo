@@ -16,7 +16,7 @@ jobs:
        mkdir $afftmp
        for file in `ls $affdir`
        do
-         cp $affdir/$file/logo.64.png $afftmp/$file.png
+         cp $affdir/$file/logo.64x64.png $afftmp/$file.png
        done
        docker compose up -d mariadb
        sleep 30s
